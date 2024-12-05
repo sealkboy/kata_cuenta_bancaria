@@ -2,20 +2,20 @@ package dev.sealkboy.kata_cuenta_bancaria;
 
 public class cuenta {
 
-	protected float saldo; 
-	protected int consignaciones = 0; 
+	public float saldo;
+	protected int consignaciones = 0;
 	protected int retiros = 0;
-	protected float tasaAnual; 
-	protected float comisionMensual = 0.0f; 
+	public float tasaAnual;
+	protected float comisionMensual = 0.0f;
 
-	public Cuenta(float saldo, float tasaAnual) {
+	public cuenta(float saldo, float tasaAnual) {
 		this.saldo = saldo;
 		this.tasaAnual = tasaAnual;
 	}
 
 	public void consignarSaldo(float cantidad) {
 		if (cantidad <= 0) {
-			System.out.println("La cantidad a consignar debe ser mayor que cero.")
+			System.out.println("La cantidad a consignar debe ser mayor que cero.");
 			return;
 		}
 		saldo += cantidad;
