@@ -1,14 +1,14 @@
 package dev.sealkboy.kata_cuenta_bancaria;
 
-public class cuenta {
+public class Cuenta {
 
-	public float saldo;
+	protected float saldo;
 	protected int consignaciones = 0;
 	protected int retiros = 0;
-	public float tasaAnual;
+	protected float tasaAnual;
 	protected float comisionMensual = 0.0f;
 
-	public cuenta(float saldo, float tasaAnual) {
+	public Cuenta(float saldo, float tasaAnual) {
 		this.saldo = saldo;
 		this.tasaAnual = tasaAnual;
 	}

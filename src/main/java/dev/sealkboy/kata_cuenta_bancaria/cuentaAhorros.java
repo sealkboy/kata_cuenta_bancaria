@@ -1,10 +1,10 @@
 package dev.sealkboy.kata_cuenta_bancaria;
 
-public class cuentaAhorros extends cuenta {
+public class CuentaAhorros extends Cuenta {
 	
 	protected boolean activa; 
 
-	public cuentaAhorros(float saldo, float tasaAnual) {
+	public CuentaAhorros(float saldo, float tasaAnual) {
 		super(saldo, tasaAnual); 
 		this.activa = saldo >= 10000;
 	}
@@ -42,14 +42,4 @@ public class cuentaAhorros extends cuenta {
         System.out.println("Comisión mensual: " + comisionMensual);
         System.out.println("Cuenta activa: " + activa);
     }	
-}
-
-
-
-
-
-
-
-
-
 }
